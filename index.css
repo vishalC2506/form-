@@ -1,0 +1,63 @@
+.outer_Boundary{
+    display: flex;
+    position: relative;
+    margin: 5vh auto;
+    border:1px solid black;
+    width: 35vw;
+    height: 90vh;
+    min-height: 90vh;
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+ transition: 0.8s;
+    
+}
+table{
+    border-spacing: 25px;
+    border-collapse: 25px;
+}
+td{
+    padding: 10px;
+    height: 12px;
+    
+}
+td:first-child{
+    text-align: right;
+    font-weight: bold;
+    border-right: 1px solid black;
+   
+    
+}
+td:last-child>input{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+tr:last-child>td{
+   border: none;
+   
+}
+
+
+button{
+    background-color:#7da1db;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+::placeholder{
+    opacity: 0.5;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:780px) {
+    .outer_Boundary{
+        width: 92vw;
+    }
+    
+}
